@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(MainActivity.this);
 
-        CarAdapter adapter=new CarAdapter(MainActivity.this,getList(images,names));
+        CarAdapter adapter=new CarAdapter(MainActivity.this,getList(images,names), this);
 
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
